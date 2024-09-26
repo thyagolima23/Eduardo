@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato</title>
+
+        <script>
+            function Enviar(){
+                var nome = document.getElementbyId("nomeId");
+                var email = document.getElementById("emailId");
+                var mensagem = document.getElementById("mensagemId");
+
+                if(nome.value != ""){
+                    alert('Obrigado Sr.(a). ' + nome.value + ', E-mail:  ' + email.value + ' pelo envio da mensagem: ' + mensagem.value);
+                }
+            }
+        </script>
+    </head>
+    <body bgcolor="#cfcdcd">
+        <table width="99%" height="40px" align="center" border="0">
+            <tr align="center">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="quem_somos.html">Quem Somos</a></td>
+                <td><a href="historia.html">História</a></td>
+                <td><a href="fotos.html">Fotos</a></td>
+                <td><a href="contato.html">Contato</a></td>
+            </tr>
+        </table>
+        <br>
+        <table width="99%" height="600px" align="center">
+            <tr align="center">
+                <h1> Entre em contato conosco</h1>
+                <td>
+                  <form name="meu_form">
+                      <p><label>Nome:</label></p>
+                      <p><input type="text" id="nomeId" name="nome"></p>
+                      <p><label>E-mail:</label></p>
+                      <p><input type="email" id="emailId" name="email"></p>
+                      <p><label>Mensagem:</label></p>
+                      <p><textarea id="mensagemId" name="mensagem"></textarea></p>
+                      <p><input type="submit" onclick="Enviar();" value="Enviar"></p>
+                  </form>
+                </td>
+            </tr>
+        </table>
+        <table width="99%" align="center" bgcolor="#ccc">
+            <tr align="center">
+                <td>©Todos os Direitos Reservados - 2024 - Thyago</td>
+            </tr>
+        </table>
+    </body>
+</html>

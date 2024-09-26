@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html charset="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+
+        <script>
+            function Enviar(){
+                var nome = document.getElementbyId("nomeId");
+                var email = document.getElementById("emailId");
+                var mensagem = document.getElementById("mensagemId");
+
+                if(nome.value != ""){
+                    alert('Obrigado Sr.(a). ' + nome.value + ', E-mail:  ' 
+                    + email.value + ' pelo envio damensagem: ' + mensagem.value);
+                }
+            }
+        </script>
+    </head> 
+    <body>
+        <form name="meu_form">
+    </body>
+</html>
