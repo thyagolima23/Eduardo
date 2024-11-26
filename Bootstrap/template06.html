@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=devive-width, initial-scale=1">
+    <title>Bootstrap - Template 06</title>
+    <!--Incorporaçãoi do Bootstrap | CSS-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="carrossel-de-imagens" Class="carousel-slide" data-bs-ride="carousel">
+
+        <!-- traços marcadores -->
+
+        <div class="carousel-indicators">
+                <!-- primeiro marcador (ativo por padrão) -->
+            <button type="button" data-bs-target="#carrosel-de-imagens" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            
+            <!-- segundo marcador: link imagem 2 -->
+            <button type="button" data-bs-target="#carrosel-de-imagens" data-bs-slide-to="1" aria-label="Slide 2">
+            </button>
+            <!-- terceiro marcador: link imagem 3 -->
+            <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="2" aria-label="Slide 3">
+            </button>
+        </div>
+
+        <!-- Bloco de imagens -->
+        <div class="carousel-inner">
+
+            <!-- Imagem 1 + legenda -->
+            <div class="carousel-item active">
+
+                <!-- Imagem 1 -->
+                <img src="c:\Users\SEEMG\Documents\Eduardo\Desenvolvimento-Web\Bootstrap\010203.jpg.jfif" width="1280px" height="720px" class="d-block w-100" alt="anime">
+
+                <!-- legenda -->
+                 <div class="carousel-caption d-none d-md-block">
+                        <h5>Imagem 01</h5>
+                        <p>Exemplo de imagem.</p>
+                 </div>
+                 
+            </div>
+
+            <!-- imagem 2 + legenda -->
+            <div class="carousel-item">
+
+                <!-- imagem 2 -->
+                <img src="c:\Users\SEEMG\Documents\Eduardo\Desenvolvimento-Web\Bootstrap\020103.jpg.jpg" width="850px" height="850px" class="d-block w-100" alt="goku">
+
+                <!-- legenda -->
+                <div class="carousel-caption d-none d-md-block">
+                        <h5>Imagem 02</h5>
+                        <p>Exemplo de imagem.</p>
+                </div>
+            </div>
+
+            <!-- imagem 3 + legenda -->
+            <div class="carousel-item">
+
+                <!-- imagem 3 -->
+                <img src="c:\Users\SEEMG\Documents\Eduardo\Desenvolvimento-Web\Bootstrap\030102.jpg" width="1280px" height="720px" class="d-block w-100" alt="montanha">
+
+                <!-- legenda -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Imagem 03</h5>
+                    <p>Exemplo de imagem.</p>
+                </div>
+            </div>
+        </div><!-- /fim bloco de imagens -->
+
+        <!-- Botões de navegação -->
+        <button class="carousel-control-prev" type="button" data-bs-target="carrossel-de-imagens"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel-de-imagens"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hiden">Próximo</span>
+        </button>
+    </div>
+    <!--Incorporação do Bootstrap | JS-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
